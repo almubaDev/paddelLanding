@@ -1,0 +1,141 @@
+:root {
+    --purple-color: #8b48bf;
+    --aqua-color:#3cddf3;
+}
+header {
+    padding: 80px 188px;
+}
+.nav-container__menu-icon {
+    display: none;
+}
+nav {
+    display: block;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav a {
+    color: #242e52 ;
+     font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    justify-content: space-between;
+    margin-right: 25px;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #242e5299;
+}
+.nav-container a {
+    display: inline;
+}
+.nav-container__contact-button {
+    display: inline-block;
+}
+.purple-button:hover {
+    background-color: #8b48bfb3;
+    cursor: pointer;
+}
+
+/* main */
+.banner-container {
+    display: flex;
+    flex-direction: row;
+    padding: 0 188px;
+}
+.mov {
+    display: none;
+     /* Desaparece aquello que solo se debe ver en movile */
+}
+.des {
+    display: inline;
+}
+.banner-title {
+    height: 500px;
+}
+.banner-title h1{
+    font-size: 5rem;
+    line-height: 5.7rem;
+}
+.report-differences {
+    margin-bottom: 70px;
+}
+.banner-title p{
+    font-size: 1.9rem;
+    line-height: 2.6rem;
+}
+.special-box {
+    align-items: center;
+    background-color: var(--purple-color);
+    flex-direction: row;
+}
+.main-information {
+    height: 180px;
+    justify-content: space-between;
+    padding: 0 218px;  
+}
+.main-information__title {
+    font-size: 3.6rem;
+    line-height: 4.1rem;
+    width: 50%;
+}
+.main-information__text {
+    font-size: 1.8rem;
+    line-height: 3.4rem;
+    text-align: justify;
+    width: 50%;
+}
+.card-information { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.card-differences {
+    margin-left: 0;
+    width: 40%;
+}
+.card-differences__title {
+    background-color: #fafafa;
+}
+.card-differences__text {
+    text-align: justify;
+    padding: 10px 50px 40px 88px;
+}
+.podium-cards {
+    display: flex;
+    flex-direction: row;
+}
+.des {
+    display: inline;
+}
+.card-best {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} 
+.bests-teams {
+    text-align: left;
+    height: 240px;
+    margin-top: 150px;
+    padding: 0px 200px 0 150px;
+}
+.bests-teams p {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4.7rem;
+
+}
+.bests-teams button {
+    color: var(--purple-color);
+    background-color:  #ffffff;
+}
+.bests-teams button:hover {
+    background-color: #fafafa;
+}
+.enterprise-info {
+    background-color:#1e1e26; 
+}

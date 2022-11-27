@@ -1,0 +1,221 @@
+:root {
+    --purple-color: #8b48bf;
+    --aqua-color:#3cddf3;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 62.5%;
+    font-weight: 500;
+}
+/* Header */
+header {
+    padding: 60px;
+}
+.nav-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.nav-container__menu-icon {
+    height: 30px;
+    width: 50px;
+}
+nav {
+    display: none;
+}
+.nav-container a {
+    display: none;
+}
+.nav-container__contact-button {
+    display: none;
+}
+.purple-button {
+    background-color: var(--purple-color);
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19px;
+    padding: 12px 0;
+    width: 140px;
+}
+/* main */
+.banner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 40px;
+    margin-bottom: 28px;
+}
+.image-paddle {
+    display: flex;
+    justify-content: center;
+}
+.image-paddle img {
+    height: auto;
+    width: 100%;
+}
+.banner-title {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    justify-content: space-around;
+    text-align: end; 
+}
+.banner-title h1{
+    font-size: 3.8rem;
+     font-weight: 700;
+    line-height: 4.7rem;
+}
+.banner-title p{
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+.report-differences {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.special-box {
+    background-color: var(--aqua-color);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main-information {
+    height: 268px; 
+    padding: 40px 0 40px 16px;
+}
+.main-information__title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+    width: 80%;
+}
+.main-information__text {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    width: 90%;
+}
+.card-information { 
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+.card-differences {
+    margin-left: 40px;
+}
+.card-differences__title span {
+    align-items: center;
+    background-color: var(--purple-color);
+    justify-content: center;
+    border-radius: 50px;
+    color: #ffffff;
+    display: flex;
+    font-weight: 700;
+    height: 40px;
+    margin-right: 20px;
+    width: 68px;
+}
+.card-differences__title {
+    display: flex;
+    align-items: center;
+    background-color: #8b48bf4d;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+}
+.card-differences__text {
+    color: #b3b2b7;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    padding: 40px 26px 26px 8px;
+}
+.podium {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.podium .title {
+    font-size: 3.9rem;
+    font-weight: 700;
+    line-height: 6.1rem;
+}
+.podium-cards {
+    display: flex;
+    flex-direction: column;
+}
+.card-best {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    margin: 60px 0 90px;
+} 
+.card-best img {
+    margin-bottom: 20px;
+}
+
+.card-best__name {
+    color: #3f4868;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2.6;
+} 
+.card-best__info {
+    color: #b9b9c1;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    padding: 0 36px;
+    text-align: center
+}
+.bests-teams {
+    align-items: center;
+    height: 300px;
+    margin-top: 50px;
+    padding: 34px 80px;
+    text-align: center;
+}
+.bests-teams p {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4.7rem;
+
+}
+.bests-teams button {
+    color: #ffffff;
+    background-color:  #232c50;
+}
+.enterprise-info {
+    background-color:#1e1e26; 
+    height: 450px;
+    flex-direction: column-reverse;
+}
+.des {
+    display: none; 
+    /* Desaparece aquello que solo se debe ver en desktop */
+}
+
+form {
+    display: flex;
+    border: solid aqua 2px;
+}
+.newslatter {
+    border: solid white 2px;
+}
+
+form button {
+    width: 100px;
+}
