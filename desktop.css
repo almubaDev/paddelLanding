@@ -8,19 +8,17 @@ header {
 .nav-container__menu-icon {
     display: none;
 }
-nav {
+.nav-container nav {
     display: block;
 }
-nav ul {
+.nav-container nav ul {
     display: flex;
     list-style: none;
 }
-nav a {
+.nav-container nav a {
     color: #242e52 ;
-     font-size: 1.3rem;
-    font-weight: 500;
+    font-size: 1.3rem;
     line-height: 1.9rem;
-    justify-content: space-between;
     margin-right: 25px;
     text-decoration: none;
 }
@@ -137,5 +135,42 @@ nav a:hover {
     background-color: #fafafa;
 }
 .enterprise-info {
-    background-color:#1e1e26; 
+    background-color:#1e1e26;
+    flex-direction: row; 
+    height: 240px;
+    justify-content: space-around;
+    padding: 40px 86px 0;
 }
+.brand {
+    align-items: flex-start;
+    flex-direction: column;
+}
+.social-media {
+    justify-content: flex-start;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    
+}
+.social-media a {
+    margin-right: 12px;
+}
+.footer-nav {
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 20px 0 0;
+    width: 34%;
+}
+.footer-nav ul li{
+    margin-bottom: 18px;
+}
+form {
+    align-items: flex-start;
+    height:70%;
+    padding: 0;
+    width: 20%;
+}
+.copyright {
+    text-align: end;
+    padding: 0 150px 30px;
+}
+

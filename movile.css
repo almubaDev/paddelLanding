@@ -26,7 +26,7 @@ header {
     height: 30px;
     width: 50px;
 }
-nav {
+.nav-container nav {
     display: none;
 }
 .nav-container a {
@@ -192,7 +192,6 @@ nav {
     font-size: 4rem;
     font-weight: 700;
     line-height: 4.7rem;
-
 }
 .bests-teams button {
     color: #ffffff;
@@ -200,22 +199,84 @@ nav {
 }
 .enterprise-info {
     background-color:#1e1e26; 
-    height: 450px;
     flex-direction: column-reverse;
+    height: 420px;
+}
+.brand {
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    width: 100%;
+}
+.footer-nav {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.footer-nav ul {
+    list-style: none;
+}
+.footer-nav ul li{
+    margin-bottom: 12px;
+}
+.footer-nav a {
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.3rem;
+    text-decoration: none;
+}
+form {
+    align-items: center;
+    display: flex;
+    justify-content:space-between;
+    padding: 50px 30px ;
+}
+.newslatter {
+    background-color: #ffffff;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    height: 38px;
+    width: 70%;
+}
+.newslatter input {
+    border: none;
+    margin-left: 10px;
+    width: 90%;
+}
+.newslatter input::placeholder {
+    color: #a0a0a0;
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+}
+.newslatter input:focus {
+    outline: solid 2px var(--purple-color);
+    color: var(--purple-color);
+}
+.form__button {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 38px;
+    width: 56px;
+}
+.copyright{
+    background-color: #1e1e26;
+    color: rgba(140, 140, 148, 1);
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: center;
+    padding: 60px 0 50px;
 }
 .des {
     display: none; 
     /* Desaparece aquello que solo se debe ver en desktop */
 }
 
-form {
-    display: flex;
-    border: solid aqua 2px;
-}
-.newslatter {
-    border: solid white 2px;
-}
-
-form button {
-    width: 100px;
-}
