@@ -132,7 +132,7 @@ nav a:hover {
     background-color:  #ffffff;
 }
 .bests-teams button:hover {
-    background-color: #fafafa;
+    background-color: #f0f8ff;
 }
 .enterprise-info {
     background-color:#1e1e26;
@@ -169,6 +169,7 @@ form {
     padding: 0;
     width: 20%;
 }
+
 .copyright {
     text-align: end;
     padding: 0 150px 30px;

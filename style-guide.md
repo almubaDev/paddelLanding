@@ -36,3 +36,11 @@ Variante gris claro: rgb (249, 249, 249)
 Para los íconos sociales, puede usar los íconos provistos o una biblioteca de íconos de fuentes. Ej:
 
 - [Font Awesome](https://fontawesome.com)
+
+      MOBILE --> DESKTOP
+      BP -MIN-WIDTH
+
+0 400| 400 900|900  2200|
+      
+      BP - MAX-WIDTH                  
+    MOBILE--> DESKTOP

@@ -1,0 +1,40 @@
+/* Efectos a la barra de navegación del header
+líneas abajo con movimiento*/
+a {
+    position: relative;
+}
+header nav ul li a:before{
+    content:'';
+    background: rgba(139, 72, 191, 0.6);
+    position:absolute;
+    bottom:-10px; 
+    width: 0px;
+    height: 0px;
+    transition:  0.5s ease-in-out;
+}
+
+header nav ul li a:hover::before{
+    width: 100%;
+    height: 4px;
+}
+
+/* Efecto RR.SS construcci[on */
+/* .efecto-a-redes {
+    transition: 0.3s ease-in-out;
+} */
+
+
+
+
+
+/* Animación boton del fomulario  agrande y empqueñese
+el boton de forma constante*/
+
+.scale-animation {
+    animation: scale 4s alternate infinite;
+}    
+@keyframes scale {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.5);}
+    100% {transform: scale(1);}
+}
