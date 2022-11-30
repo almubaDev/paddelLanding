@@ -19,12 +19,9 @@ header nav ul li a:hover::before{
 }
 
 /* Efecto RR.SS construcci[on */
-/* .efecto-a-redes {
-    transition: 0.3s ease-in-out;
-} */
-
-
-
+.efecto-a-redes {
+    animation: rotar 10s linear infinite;
+}
 
 
 /* Animación boton del fomulario  agrande y empqueñese
@@ -37,4 +34,13 @@ el boton de forma constante*/
     0% {transform: scale(1);}
     50% {transform: scale(1.5);}
     100% {transform: scale(1);}
+}
+@keyframes rotar {
+    0% { transform: rotate(90deg);}
+    20% { transform: scale(1.5); }
+    30% { transform: scale(1.5); }
+    40% { transform: scale(1.5); }
+    50% { transform: rotate(-90deg);}
+    60% { transform: scale(1);}
+    100% { transform: scale(1);}
 }
