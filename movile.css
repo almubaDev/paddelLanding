@@ -25,6 +25,7 @@ header {
 .nav-container__menu-icon {
     height: 30px;
     width: 50px;
+    /* hazlo flotante */
 }
 .header-nav {
     display: none;
