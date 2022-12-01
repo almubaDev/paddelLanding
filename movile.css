@@ -26,10 +26,10 @@ header {
     height: 30px;
     width: 50px;
 }
-.nav-container nav {
+.header-nav {
     display: none;
 }
-.nav-container a {
+.header-nav a {
     display: none;
 }
 .nav-container__contact-button {
@@ -204,6 +204,7 @@ header {
     color: #ffffff;
     background-color:  #232c50;
 }
+/* Diseño footer */
 .enterprise-info {
     background-color:#1e1e26; 
     flex-direction: column-reverse;
@@ -286,4 +287,18 @@ form {
 .des {
     display: none; 
     /* Desaparece aquello que solo se debe ver en desktop */
+}
+
+.especial-nav ul {
+    list-style: none;
+}
+.especial-nav a {
+    color: #242e52 ;
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+    margin-right: 25px;
+    text-decoration: none;
+}
+.especial-nav a:hover {
+    color: #242e5299;
 }

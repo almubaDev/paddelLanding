@@ -2,27 +2,30 @@
     --purple-color: #8b48bf;
     --aqua-color:#3cddf3;
 }
+.des {
+    display: inline;
+}
 header {
     padding: 80px 188px;
 }
 .nav-container__menu-icon {
     display: none;
 }
-.nav-container nav {
+.header-nav{
     display: block;
 }
-.nav-container nav ul {
+.header-nav ul {
     display: flex;
     list-style: none;
 }
-.nav-container nav a {
+.header-nav a {
     color: #242e52 ;
     font-size: 1.3rem;
     line-height: 1.9rem;
     margin-right: 25px;
     text-decoration: none;
 }
-nav a:hover {
+.header-nav a:hover {
     color: #242e5299;
 }
 .nav-container a {
@@ -41,13 +44,6 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     padding: 0 188px;
-}
-.mov {
-    display: none;
-     /* Desaparece aquello que solo se debe ver en movile */
-}
-.des {
-    display: inline;
 }
 .banner-title {
     height: 500px;
@@ -105,9 +101,6 @@ nav a:hover {
 .podium-cards {
     display: flex;
     flex-direction: row;
-}
-.des {
-    display: inline;
 }
 .card-best {
     align-items: center;
@@ -174,4 +167,7 @@ form {
     text-align: end;
     padding: 0 150px 30px;
 }
-
+.mov {
+    display: none;
+     /* Desaparece aquello que solo se debe ver en movile */
+}
