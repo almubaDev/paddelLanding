@@ -16,16 +16,13 @@
     <header>
         <div class="nav-container">
             <input type="checkbox" id="evento-click" class="mov">
-
             <img src="./img/logo.svg" alt="logo" class="nav-container__logo">
             <label for="evento-click" class="btn__open-nav mov">
                 <img src="./img/ham2.png" alt="menu-icon" class="nav-container__menu-icon mov">
                 <p class="nav-container__menu-icon closed mov">X</p>
             </label>
            
-            <!-- hace el boton flotante -->
-             <!--  -->
-
+             <!-- barra desplegable  -->
             <nav class="special-nav mov">
                 <ul>
                     <li><a href="">Sports</a></li>
@@ -83,7 +80,8 @@
         <section class="podium">
             <p class="title">Best of the month</p>
             <div class="podium-cards">
-                <div class="card-best des">
+                <input type="checkbox" id="evento-ver-mas">
+                <div class="card-best des despliege">
                     <img src="./img/avatar-sanyo.png" alt="sanyo_avatar">
                     <p class="card-best__name">Sanyo</p>
                     <p class="card-best__info">Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
@@ -93,13 +91,14 @@
                     <p class="card-best__name">Lebron</p>
                     <p class="card-best__info">Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
                 </div>
-                <div class="card-best des">
+                <div class="card-best des despliege">
                     <img src="./img/avatar-navarro.png" alt="navarro_avatar">
                     <p class="card-best__name">Navarro</p>
                     <p class="card-best__info">Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
                 </div>
             </div>
-            <button class="purple-button">More</button>
+            <label for="evento-ver-mas" class="purple-button btn__more-card">More</label>
+            
         </section>
         <section class="bests-teams special-box">
             <p>Get to know the best <br class="des"> teams of the year</p>

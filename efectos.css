@@ -24,6 +24,38 @@ líneas abajo con movimiento*/
     animation: rotar 10s linear infinite;
 }
 
+/*efecto menu movile desplegable*/
+#evento-click:checked ~ .special-nav{
+    /*transform: translateX(-50%);*/
+
+    padding-right: 150px ;
+    visibility: visible;
+}
+#evento-click:checked ~ .btn__open-nav {
+    z-index: 11;
+}
+#evento-click:checked ~ .btn__open-nav img {
+    display: none;
+}
+#evento-click:checked ~ .btn__open-nav p {
+    align-items: center;
+    color: var(--aqua-color);
+    display: flex;
+    font-size: 24px;
+    justify-content: center;
+   
+}
+/* Boto ver mas*/
+#evento-ver-mas:checked ~ .despliege {
+    align-items: center;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    height: 260px;
+    justify-content: flex-start;
+    margin: 90px 0 40px;
+
+}
 
 /* Animación boton del fomulario  agrande y empqueñese
 el boton de forma constante*/
