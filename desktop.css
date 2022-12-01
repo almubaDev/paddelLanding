@@ -2,6 +2,10 @@
     --purple-color: #8b48bf;
     --aqua-color:#3cddf3;
 }
+.mov {
+    display: none;
+     /* Desaparece aquello que solo se debe ver en movile */
+}
 .des {
     display: inline;
 }
@@ -167,7 +171,4 @@ form {
     text-align: end;
     padding: 0 150px 30px;
 }
-.mov {
-    display: none;
-     /* Desaparece aquello que solo se debe ver en movile */
-}
+

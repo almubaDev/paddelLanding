@@ -288,17 +288,44 @@ form {
     display: none; 
     /* Desaparece aquello que solo se debe ver en desktop */
 }
+/* #evento-click {
+    display: none;
+}
+.btn__open-nav {
+    margin-left: 30px;
+    height: 30px;
+    width: 50px;
+}
+.special-nav {
+    text-align: center;
+    border:red solid 1px;
+    background: rgba(60, 221, 243,0.7);;
+    width: 250px;
+    position: absolute;
+    right: 5px;
+    padding: 12px 0;
+    z-index: 10;
+   
+    top: 120px;
+    box-shadow: -10px 0px 30px -20px rgba(0,0,0,0.4);
+    border-radius: 10px;
+    visibility: visible;
+    display: none; 
+    transition: all 300ms;
 
-.especial-nav ul {
+}
+.special-nav ul {
     list-style: none;
 }
-.especial-nav a {
-    color: #242e52 ;
+.special-nav a {
+    color:var(--purple-color);
     font-size: 1.3rem;
     line-height: 1.9rem;
     margin-right: 25px;
     text-decoration: none;
 }
-.especial-nav a:hover {
-    color: #242e5299;
-}
+#evento-click:checked ~ .special-nav{
+   
+    transform: translateX(-50%);
+    visibility: visible;
+} */
