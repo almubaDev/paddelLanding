@@ -15,16 +15,19 @@ html {
 /* Header */
 header {
     padding: 60px;
+ 
 }
 .nav-container {
+
     align-items: center;
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 100%; 
 }
 .nav-container__menu-icon {
     height: 30px;
     width: 50px;
+
     /* hazlo flotante */
 }
 .header-nav {
@@ -53,7 +56,7 @@ header {
     display: none;
 }
 .btn__open-nav {
-    height: 30px;
+    height: 30px; 
     margin-left: 200px;
     width: 50px;
 }
