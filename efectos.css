@@ -1,9 +1,10 @@
 /* Efectos a la barra de navegación del header
-líneas abajo con movimiento*/
+líneas abajo con movimiento en cada <a>*/
 .header-nav a {
     position: relative;
+    /*Permite colocar el background en positión abosolute y bajarlo para generar la línea*/
 }
-.header-nav ul li a:before{
+.header-nav ul li a::before{
     content:'';
     background: rgba(139, 72, 191, 0.6);
     position:absolute;
@@ -11,31 +12,32 @@ líneas abajo con movimiento*/
     width: 0px;
     height: 0px;
     transition:  0.5s ease-in-out;
+     /*before permite agregar elemtos antes del elemnto html sleccionado con la clase coprrespondiente, utilizando content se agrega una cadena vacia
+     y un background, el positión absolut dentro del contenedor padre con position reslative, bajar la linea 10 px bajo el limite del contenedor padre <a> 
+     se le reducr sus altura y ancho a 0 para luego darle volumen a travez del efecto, la transición dura medio segundo, ejecutandose un poco más lento al inicio y al final
+     de la tansición*/
 }
-
 .header-nav ul li a:hover::before{
     width: 100%;
     height: 4px;
+     /*Se activa el efecto al pasar el mouse por encia del enlace :hover, aumentando la altura de la linea de 0 a 4, y su ancho de 0 al 1005 del contendor padre*/
 }
 
-/* Efecto RR.SS construcci[on */
-.efecto-a-redes {
-    transition: ease-in-out;
-    animation: rotar 10s linear infinite;
-}
 
-/*efecto menu movile desplegable*/
+/*efecto menú monile desplegable*/
 #evento-click:checked ~ .special-nav{
-    /*transform: translateX(-50%);*/
-
     padding-right: 150px ;
     visibility: visible;
+     /*Hace visible, estaba oculta con hidden por defecto, la barra, el padding es para alejarla un poco hacia el centro de la pantalla, pero mateniendo su bacground
+     en una distancia de 150px*/
 }
 #evento-click:checked ~ .btn__open-nav {
     z-index: 11;
+     /*Al activar el evento el label pasa adelante del todo el contenido, con el fin de poder volverlo a pulsar por sobre la barra desplegable, y poder cerrarla*/
 }
 #evento-click:checked ~ .btn__open-nav img {
     display: none;
+     /*Se oculta el botón hamburgesa para poder cambiarlo, con el fin de generar un icono de cierre*/
 }
 #evento-click:checked ~ .btn__open-nav p {
     align-items: center;
@@ -43,8 +45,10 @@ líneas abajo con movimiento*/
     display: flex;
     font-size: 24px;
     justify-content: center;
-   
+     /*Se muestra el un boton X, mucho más intuitivo, que indica al usuario el pulsar para cerrar la ventana*/
 }
+ /*-------------------------------------------------------------------------------------------*/
+
 /* Boto ver mas*/
 #evento-ver-mas:checked ~ .despliege {
     align-items: center;
@@ -54,19 +58,39 @@ líneas abajo con movimiento*/
     height: 260px;
     justify-content: flex-start;
     margin: 90px 0 40px;
+     /*Da formato a las .best-card ocultas, al pulsar el boton ver más se dispara el evento, que les da display.*/
+}
+#evento-ver-mas:checked ~ .despliegedesk {
+    align-items: center;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    height: 260px;
+    justify-content: flex-start;
+    margin: 90px 0 40px;
+    /*Creado solo como ejemplo para desplegar una tarjeta en versión desktop.  Da formato a las .best-card ocultas, al pulsar el boton ver más se dispara el evento, que les da display.*/
 
 }
+/*---------------------------------------------------------------------------------------*/
+/* Efecto iconos RR.SS */
+.efecto-a-redes {
+    animation: rotar 10s linear infinite;
+    /* Efecto a iconos RR.SS. desarrollado en el keyframe rotar, dura 10 segundos la animación en total, es linear genera de principio a fin la animación tal
+    como se descrube en el keyframe, infinite permite rerpoducirla por tiempo indeterminado*/
+}
+ /*----------------------------------------*/
 
-/* Animación boton del fomulario  agrande y empqueñese
-el boton de forma constante*/
-
+/* Animación boton del fomulario  agrande y empqueñese el boton de forma constante*/
 .scale-animation {
     animation: scale 4s alternate infinite;
+    /* Efecto a iconos al botón GO del fomulario. desarrollado en el keyframe scale, dura 4s segundos la animación en total, es alternate genera la animación del keyframe hacia adelante 
+    luego hacia atras, infinite permite rerpoducirla por tiempo indeterminado*/
 }    
 @keyframes scale {
     0% {transform: scale(1);}
     50% {transform: scale(1.5);}
-    100% {transform: scale(1);}
+    100% {transform: scale(2);}
+    /*Parte la animación con el tamaño original del elemnto, luego lo escala a los tamaños indicados*/
 }
 @keyframes rotar {
     5% { transform: rotate(90deg);}
@@ -76,5 +100,7 @@ el boton de forma constante*/
     50% { transform: rotate(-90deg) scale(1.5);}
     60% { transform: scale(1.5);}
     100% { transform: scale(1);}
+    /* La animación parte con los elemntos estaticas, luego los rato 90 grados en el sentido de las agujas del reloj, se devuelve y matiene el tamaño original, para luego escalarlo, lo mantiene en
+    esa nueva escala, luego lo gira 90 grados a contrareloj en esa escala aumentada, delvuelve a posición original en escala aumentada, y reduce su tamaño a la escala original del elemnto */
 
 }

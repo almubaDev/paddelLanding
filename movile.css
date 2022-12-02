@@ -9,16 +9,14 @@
 }
 html {
     font-family: 'Be Vietnam Pro', sans-serif;
-    font-size: 62.5%;
+    font-size: 62.5%; /* Igualo el font-size a 10px, para calcular rem de forma simple */
     font-weight: 500;
 }
 /* Header */
 header {
     padding: 60px;
- 
 }
 .nav-container {
-
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -27,18 +25,18 @@ header {
 .nav-container__menu-icon {
     height: 30px;
     width: 50px;
-
-    /* hazlo flotante */
 }
+/* Quito el display a todos los elemento de la barra de navegación que corresponde a la versión desktop */
 .header-nav {
-    display: none;
+    display: none; 
 }
 .header-nav a {
-    display: none;
+    display: none; 
 }
 .nav-container__contact-button {
-    display: none;
+    display: none; 
 }
+/*---------------------------------------------------------------------------------------------------------*/
 .purple-button {
     background-color: var(--purple-color);
     border: none;
@@ -51,15 +49,12 @@ header {
     padding: 12px 0;
     width: 140px;
 }
-/*Estilo para menu desplegable header*/
+/*Estilos para menu desplegable header*/
 #evento-click {
     display: none;
+    /* input que dispara el evento de despliegue de la barra de navegación en mobile, no es necesario dejarlo visible, ya que se activa desde su label(contenedor del menu_icon)*/
 }
-.btn__open-nav {
-    height: 30px; 
-    margin-left: 200px;
-    width: 50px;
-}
+
 .special-nav {
     background: rgba(30, 30, 38,0.9);
     border-radius: 10px;
@@ -84,9 +79,9 @@ header {
     text-decoration: none;
 }
 .closed {
-    display: none;
+    display: none; /*Símbolo de x para que el usuario pueda cerrar la barra desplegable de forma intuitiva, parece despues de desplegarla */
 }
-/*---------------------------------*/
+/* -------------------fin header-----------------*/
 
 /* main */
 .banner-container {
@@ -99,6 +94,7 @@ header {
 .image-paddle {
     display: flex;
     justify-content: center;
+    margin-bottom: 80px;
 }
 .image-paddle img {
     height: auto;
@@ -198,6 +194,8 @@ header {
 .podium-cards {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+
 }
 .card-best {
     align-items: center;
@@ -234,6 +232,7 @@ header {
 }
 #evento-ver-mas {
     display: none;
+    /* El evento de despligue de más best-card, oculta las tarjetas hasta que se pulsa el botón */
 }
 .bests-teams {
     align-items: center;
@@ -251,6 +250,8 @@ header {
     color: #ffffff;
     background-color:  #232c50;
 }
+/* -------------------fin main-----------------*/
+
 /* Diseño footer */
 .enterprise-info {
     background-color:#1e1e26; 
@@ -330,6 +331,7 @@ form {
     line-height: 1.8rem;
     text-align: center;
     padding: 60px 0 50px;
+ /* -------------------fin footer-----------------*/
 }
 .des {
     display: none; 

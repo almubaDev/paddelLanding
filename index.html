@@ -15,14 +15,16 @@
 <body>
     <header>
         <div class="nav-container">
+            <!-- El input check genera un condicional para desplegar elemntos, en este caso una barra de menú  mobile y desktop-->
             <input type="checkbox" id="evento-click" class="mov">
             <img src="./img/logo.svg" alt="logo" class="nav-container__logo">
             <label for="evento-click" class="btn__open-nav mov">
                 <img src="./img/ham2.png" alt="menu-icon" class="nav-container__menu-icon mov">
-                <p class="nav-container__menu-icon closed mov">X</p>
-            </label>
-           
-             <!-- barra desplegable  -->
+                <p class="nav-container__menu-icon closed mov">X</p>  <!-- cambia la imagén para orientar el cierre de la barra desplegable-->
+            </label>         <!-- barra desplegable para el boton hamburgesa de header en versión movile -->
+            
+            
+             <!-- barra desplegable para el boton hamburgesa de header en versión movile -->
             <nav class="special-nav mov">
                 <ul>
                     <li><a href="">Sports</a></li>
@@ -32,7 +34,7 @@
                     <li><a href="">Community</a></li>
                 </ul>
             </nav>
-             <!--  -->
+             <!-- Las etiquetas mov y des agregan o quitan display a elemntos para los dispositivos móbiles y desktop según corresponda -->
 
             <nav class="header-nav">
                 <ul>
@@ -43,7 +45,7 @@
                     <li><a href="">Community</a></li>
                 </ul>
             </nav>
-            <a href="" target="_blank"><button class="nav-container__contact-button purple-button">Contact</button></a>
+            <button class="nav-container__contact-button purple-button">Contact</button>
         </div>
     </header>
     <main>
@@ -80,7 +82,9 @@
         <section class="podium">
             <p class="title">Best of the month</p>
             <div class="podium-cards">
+                     <!-- Como arriba, el input check dispara el evento que permite visualizar más tarjetas al pulsar sobre "More", en mobile y desktop -->
                 <input type="checkbox" id="evento-ver-mas">
+                <!-- Las clases despliege y despliege desk son para mostrar el efecto del botón ver más -->
                 <div class="card-best des despliege">
                     <img src="./img/avatar-sanyo.png" alt="sanyo_avatar">
                     <p class="card-best__name">Sanyo</p>
@@ -96,8 +100,16 @@
                     <p class="card-best__name">Navarro</p>
                     <p class="card-best__info">Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
                 </div>
+                <!-- a modo de ejemplo para el boton ver más en escritorio -->
+                <div class="card-best des mov despliegedesk">
+                    <img src="./img/avatar.lebron.png" alt="lebron_avatar">
+                    <p class="card-best__name">Lebron</p>
+                    <p class="card-best__info">Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                </div>
+                <!--  -->
             </div>
             <label for="evento-ver-mas" class="purple-button btn__more-card">More</label>
+                 <!--Se le da diseño de botón al label y así activar el input check para desplegar más card-best (jugadores) -->
             
         </section>
         <section class="bests-teams special-box">
@@ -145,6 +157,5 @@
             <p>Copyright 2020. All Rights Reserved</p>
         </div>
     </footer>
-</label>
 </body>
 </html>

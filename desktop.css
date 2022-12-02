@@ -8,7 +8,9 @@
 }
 .des {
     display: inline;
+    /* Aparecen los elementos que se debbían oculatar en movile */
 }
+/*header*/
 header {
     padding: 80px 188px;
 }
@@ -42,6 +44,7 @@ header {
     background-color: #8b48bfb3;
     cursor: pointer;
 }
+/* -------------------fin header-----------------*/
 
 /* main */
 .banner-container {
@@ -111,7 +114,13 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 30%;
 } 
+.despliegedesk {
+        /* Clase hecha solo para ejemplificar despliege del botón more en desktop
+        se quita su display para que solo aparezca al disparar el evento */
+    display: none;
+}
 .bests-teams {
     text-align: left;
     height: 240px;
@@ -122,7 +131,6 @@ header {
     font-size: 4rem;
     font-weight: 700;
     line-height: 4.7rem;
-
 }
 .bests-teams button {
     color: var(--purple-color);
@@ -131,6 +139,9 @@ header {
 .bests-teams button:hover {
     background-color: #f0f8ff;
 }
+/* -------------------fin main-----------------*/
+
+/*footer*/
 .enterprise-info {
     background-color:#1e1e26;
     flex-direction: row; 
@@ -166,9 +177,8 @@ form {
     padding: 0;
     width: 20%;
 }
-
 .copyright {
     text-align: end;
     padding: 0 150px 30px;
 }
-
+/* -------------------fin footer-----------------*/
