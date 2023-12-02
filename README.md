@@ -12,7 +12,6 @@ Este proyecto es una Landing Page simple para promocionar un torneo de Pádel. U
 
 - **Diseño Responsivo:** La página se adapta a diferentes tamaños de pantalla para una experiencia de usuario consistente.
 - **Información del Torneo:** Proporciona detalles sobre la fecha, lugar y reglas del torneo.
-- **Registro:** Incluye un formulario simple para que los participantes se registren en el torneo.
 - **Estilo Atractivo:** Utiliza estilos CSS para mejorar la apariencia general de la página e interacciones sencillas.
 
 ## Contribución
