@@ -2,9 +2,9 @@
 
 Este proyecto es una Landing Page simple para promocionar un torneo de Pádel. Utiliza solo HTML y CSS para crear una interfaz atractiva y fácil de usar.
 
-## Deply
 
-[Visita](https://almuba.dev/paddelLanding/).
+
+##[Deploy](https://almuba.dev/paddelLanding/).
 
 ## Características
 
