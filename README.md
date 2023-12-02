@@ -1,43 +1,29 @@
-## El reto
+# Landing Page - Torneo de Pádel
 
-Su desafío es crear esta página de destino y hacer que se parezca lo más posible al diseño.
+Este proyecto es una Landing Page simple para promocionar un torneo de Pádel. Utiliza solo HTML y CSS para crear una interfaz atractiva y fácil de usar.
 
-Sus usuarios deberían poder:
+## Deply
 
-- Ver el diseño óptimo para el sitio según el tamaño de la pantalla de su dispositivo
-- Los aspectos que tendremos en cuenta para la corrección serán los siguientes:
-  -Estructura correcta de HTML
-  -Uso y correcta implementación de etiquetas semánticas
-  -Adaptabilidad a dos tipos de dispositivos
-  -Correcta implementación del fomulario
-  -Imagens, iconos, fuentes, background
-  -Implementación de Flexbox
-  -Buenas Practicas en el CSS
-  -Pseudoelementos y Pseudoclases
-  -(opcional) ---> Pequeñas animaciones
+[Visita](https://almuba.dev/paddelLanding/).
 
-## Dónde encontrar todo
+## Características
 
-Su tarea es construir el proyecto con los diseños dentro de la carpeta `/ diseño`. Encontrará una versión móvil y de escritorio del diseño.
+- **Diseño Responsivo:** La página se adapta a diferentes tamaños de pantalla para una experiencia de usuario consistente.
+- **Información del Torneo:** Proporciona detalles sobre la fecha, lugar y reglas del torneo.
+- **Registro:** Incluye un formulario simple para que los participantes se registren en el torneo.
+- **Estilo Atractivo:** Utiliza estilos CSS para mejorar la apariencia general de la página e interacciones sencillas.
 
-El diseño para mobile esta en formato estático JPG. Si desea hacerle cambios esteticos lo puede hacer a su gusto
+## Contribución
 
-Se agrega link a Figma [https://www.figma.com/file/iII0s16x1QBl77oSuyXRrg/Frontend-1-Septiembre-22], con la oración anterior se hace referencia de que no siempre se le debe hacer caso a todo lo que nos dice esta herramienta.
+¡Contribuciones son bienvenidas! Si encuentras algún problema o tienes ideas para mejorar la aplicación, sigue estos pasos:
 
-Encontrará todos los recursos necesarios en la carpeta `/ imagenes`. Los activos ya están optimizados.
+1. Crea un nuevo *issue* explicando el problema o la mejora.
+2. Haz un *fork* del repositorio.
+3. Crea una nueva rama para tu contribución: `git checkout -b feature/nueva-funcion`
+4. Realiza los cambios y haz *commit*: `git commit -m "Añadir nueva función"`
+5. Haz *push* a tu rama: `git push origin feature/nueva-funcion`
+6. Crea un *pull request* en GitHub.
 
-También hay un archivo `style-guide.md` que contiene la información necesaria, como la paleta de colores y las fuentes.
+## Licencia
 
-## Construyendo tu proyecto
-
-No dude en utilizar cualquier flujo de trabajo con el que se sienta cómodo. A continuación se muestra un proceso sugerido:
-
-1. Revise los diseños para comenzar a planificar cómo abordará el proyecto. Este paso es crucial para ayudarlo a pensar en el futuro para que las clases de CSS creen estilos reutilizables.
-2. Antes de agregar cualquier estilo, estructure su contenido con HTML. Escribir su HTML primero puede ayudarlo a enfocar su atención en la creación de contenido bien estructurado.
-3. Escriba los estilos base para su proyecto, incluidos los estilos de contenido general, como `font-family` y` font-size`.
-4. Comience a agregar estilos en la parte superior de la página y continúe hacia abajo.
-5. Deje comentarios en el codigo en caso que lo crea necesario
-
-## Envío de su solución
-
-Envíe su solución en el google forms adjunto en PG, por favor adjuntar un archivo ZIP.
+Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
